@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:padding="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="USER LOGIN"
+            android:textAlignment="center"
+            android:paddingLeft="25dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="25dp"
+            android:id="@+id/tname" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:layout_marginLeft="15dp"
+            android:textSize="25dp"
+            android:id="@+id/editname"
+            android:inputType="textCapCharacters"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tname"
+            android:id="@+id/trollNo"
+            android:text="Roll No:"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/t2k"
+            android:text="2K"
+            android:textSize="25dp"/>
+        <EditText
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:id="@+id/edityear"
+            android:minEms="2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/HO/"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:digits="GB"
+            android:id="@+id/editgb"
+            android:inputType="textCapCharacters"
+            android:maxLength="1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="25dp"
+            />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:id="@+id/editroll"
+            android:inputType="number"
+            android:maxLength="3"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="40dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/b1"
+        />
+
+
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+    </ProgressBar>
+
+
+
+</LinearLayout>
